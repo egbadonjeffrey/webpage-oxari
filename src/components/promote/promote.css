@@ -1,0 +1,39 @@
+.promote-background {
+    background: rgba(223, 223, 223, 0.153);
+}
+.promote-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 5rem auto;
+    padding: 5rem;
+}
+.promote-container h1.promote-tags {
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: -.3rem;
+}
+.promote-container h1.promote-tags span {
+    font-weight: 400;
+}
+.promote-container p {
+    margin-left: 10rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+    font-family: 'Exo', sans-serif;
+}
+.promote-container p > a {
+    font-size: inherit;
+    font-weight: 600;
+    color: #21e750;
+    text-decoration: none;
+    border-bottom: 2px dotted #21e750; 
+}
+.promote-container p > a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #21e750; 
+    transition: all 300ms ease-in-out;
+}

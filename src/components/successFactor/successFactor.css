@@ -1,0 +1,46 @@
+.success-factor-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    width: 70%;
+    margin: 0 auto;
+}
+.success-factor-container > h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    letter-spacing: -.2rem;
+}
+.success-factor-container h1 > span {
+    font-weight: 400;
+}
+.factors-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    color: black
+}
+.factors-container .impact h1, .factors-container .green-growth h1, .factors-container .risk-assessment h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+}
+.factors-container .impact div, .factors-container .green-growth div, .factors-container .risk-assessment div {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+    font-family: 'Exo', sans-serif;
+}
+.green-growth a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #21e750;
+    text-decoration: none;
+    border-bottom: 2px dotted #21e750; 
+    transition: all 300ms ease-in-out;
+}
+.green-growth a:hover {
+    border-bottom: 2px solid #21e750; 
+}

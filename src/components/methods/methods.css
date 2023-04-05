@@ -1,0 +1,100 @@
+.methods-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5rem;
+}
+.methods-container .intro-statement h1.methods-tag {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -.3rem;
+    margin: 3rem 0;
+}
+.methods-container .intro-statement h1.methods-tag span {
+    font-weight: 400;
+}
+.methods-container .intro-statement p {
+    font-family: 'Exo', sans-serif;
+    width: 40%;
+    margin-left: 10rem;
+    margin-bottom: 5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+    font-family: 'Exo', sans-serif;
+}
+.method-item-container {
+    display: flex;
+    flex-direction: column;
+}
+.method-item-image-container {
+    flex: 1;
+    object-fit: cover;
+}
+.method-item-container > img {
+    width: 10rem;
+    height: 10rem;
+}
+.method-item-container .method-item-description {
+    flex: .9;
+    line-height: 2;
+}
+.method-item-description h1 {
+    font-family: 'Jost', sans-serif;
+}
+.method-item-description p {
+    font-family: 'Exo', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+}
+.scope, .shap_analysis {
+    display: flex;
+    flex-direction: row;
+    margin: 10rem 0;
+}
+.scope .method-item-description, .benchmark .method-item-description {
+    margin-top: -10rem;
+}
+.shap_analysis .method-item-description {
+    margin-top: -13rem;
+}
+.shap_analysis .method-item-description p > a {
+    text-decoration: none;
+    border-bottom: 2px dotted green;
+    color: rgb(4, 170, 4);
+    font-weight: 600;
+}
+.shap_analysis .method-item-description p > a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid green;
+}
+.scope .method-item-description h1, .shap_analysis .method-item-description h1, .benchmark .method-item-description h1 {
+    box-sizing: border-box;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -.3rem;
+    margin: 3rem 0;
+}
+.scope .method-item-description p, .shap_analysis .method-item-description p, .benchmark .method-item-description p {
+    line-height: 1.5;
+    font-family: 'Exo', sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+}
+.scope .method-item-description p, .shap_analysis .method-item-description p, .benchmark .method-item-description p {
+    width: 100%;
+}
+.benchmark {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}

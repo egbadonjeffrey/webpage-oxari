@@ -1,0 +1,49 @@
+.home-banner {
+    position: relative;
+    height: 80rem;
+    width: auto;
+}
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 17rem auto;
+    line-height: 6rem;
+    text-transform: capitalize;
+    z-index: 999;
+}
+.intro-text div {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.intro-text div > h1 {
+    margin: 0;
+    font-weight: 500;
+    color: #282c34;
+}
+.intro-text div > h1:first-of-type {
+    /* margin-bottom: 2rem; */
+}
+.intro-text div > h1:last-of-type {
+    margin-left: 5rem;
+}
+.intro-text span {
+    font-size: 3rem;
+    font-weight: 500;
+    /* padding-top: 1rem; */
+    color: #737373;
+    margin-left: 5rem;
+}
+.bottom-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 60%;
+    margin: 0 auto;
+    padding: 6rem 0;
+    font-family: 'Exo', sans-serif; 
+    font-size: 1.2rem;
+}

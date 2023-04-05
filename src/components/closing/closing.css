@@ -1,0 +1,61 @@
+.closing-container {
+    position: relative;
+    background-image: url('../../images/closingBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 50vh;
+}
+.closing-statement {
+    position: absolute; 
+    width: 40%;
+    height: max-content;
+    top: -50px;
+    right: 300px;
+    z-index: 2;
+}
+.closing-statement-inner {
+    width: 100%;
+    position: relative;
+    background: white;
+    padding: 3rem;
+    font-size: 1.25rem;
+    --edge-size: 1rem;
+    border: 1px solid green;
+    --border-width: 0.6rem;
+    border-image-slice: 1;
+    border-width: var(--border-width);
+    -webkit-clip-path: polygon(var(--edge-size) 0,100% 0,100% calc(100% - var(--edge-size)),calc(100% - var(--edge-size)) 100%,0 100%,0 var(--edge-size));
+    clip-path: polygon(var(--edge-size) 0,100% 0,100% calc(100% - var(--edge-size)),calc(100% - var(--edge-size)) 100%,0 100%,0 var(--edge-size));
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+    z-index: 30;
+}
+.closing-statement-inner h2 {
+    font-size: 2.5rem;
+    letter-spacing: -.2rem;
+    margin-bottom: 3rem;
+}
+.closing-statement-inner span {
+    color: green;
+}
+.closing-statement-inner p {
+    width: 70%;
+    color: rgb(131, 131, 131);
+    font-size: .95rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    line-height: 1.3;
+}
+.closing-statement-inner p > a {
+    color: green;
+    text-decoration: none;
+    border-bottom: 2px dotted green; 
+    transition: all 500ms ease-in-out;
+}
+.closing-statement-inner p > a:hover {
+    color: green;
+    text-decoration: none;
+    border-bottom: 2px solid green; 
+}

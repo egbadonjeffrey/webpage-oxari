@@ -1,0 +1,53 @@
+.background-color {
+    background: white;
+}
+.not-visible {
+    top: -100px;
+}
+.visible {
+    top: 0;
+}
+.nav {
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding: 1rem 0;
+    z-index: 15;
+    transition: all 500ms ease-in-out;
+}
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 10024px) {
+    .nav-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.logo-container {
+    flex: 1;
+    justify-self: start;
+}
+.logo img {
+    width: 10rem;
+}
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-self: end;
+    justify-content: flex-end;
+}
+.nav a {
+    padding: 1rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.603);
+    font-weight: 500;
+}
+.nav a:hover {
+    color: black;
+}

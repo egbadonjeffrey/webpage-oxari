@@ -1,0 +1,73 @@
+
+.team-member {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    gap: 1.5rem;
+    padding: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    border-radius: 7px;
+}
+@media screen and (max-width: 1000px) {
+    /* .team-member {
+        display: flex;
+        flex-direction: column;
+    } */
+}
+.team-image-social {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.linkedIn, .github {
+    color: gray;
+    width: 2rem;
+    height: 2rem;
+    font-weight: 700;
+}
+.portrait-container {
+    width: 200px;
+    height: 200px;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 3s linear infinite;
+  margin-top: 1.5rem;
+}
+@keyframes morph{
+    0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+}
+.portrait-container  img {
+    width: 100%;
+}
+.about-team-member {
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+}
+.about-screen-container .about-team-member h1 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.about-screen-container .about-team-member span {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.about-screen-container .about-team-member p {
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.886);
+}
