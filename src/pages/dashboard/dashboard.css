@@ -7,6 +7,20 @@
     margin: 10rem auto;
 }
 .dashboard-statement {
+    margin-bottom: 10rem;
+}
+.dashboard-statement h1 {
+    width: 40%;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: -.3rem;
+}
+.dashboard-statement span {
+    font-size: 4rem;
+    font-weight: 400;
+}
+.dashboard-statement p {
     width: 40%;
     font-size: 14px;
     color: gray;

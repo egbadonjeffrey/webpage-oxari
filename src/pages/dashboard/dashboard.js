@@ -51,11 +51,16 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <div className="dashboard-statement">
-        Gain insights about the environmental impact of companies such as carbon
-        emission estimations, temperature score, decoupling indicators, and
-        position within the global market. Using our expertise this information
-        can be seamlessly integrated in order to influence the next important
-        investment decisions.
+        <h1>
+          Let Us Earn <br /> <span>Your Trust.</span>
+        </h1>
+        <p>
+          Gain insights about the environmental impact of companies such as
+          carbon emission estimations, temperature score, decoupling indicators,
+          and position within the global market. Using our expertise this
+          information can be seamlessly integrated in order to influence the
+          next important investment decisions.
+        </p>
       </div>
       <div>
         <SearchBar
