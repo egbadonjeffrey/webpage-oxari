@@ -8,14 +8,16 @@ const Layout = () => {
   const [desktop, setDesktop] = useState(true);
 
   useEffect(() => {
-    const handleNoMobile = () => {
-      if (window.innerWidth < 500) {
-        console.log(window.innerWidth);
-        setDesktop(false);
-      }
-    };
+    if (window.innerWidth !== undefined) {
+      const handleNoMobile = () => {
+        if (window.innerWidth < 500) {
+          console.log(window.innerWidth);
+          setDesktop(false);
+        }
+      };
 
-    handleNoMobile();
+      handleNoMobile();
+    }
   });
   return (
     <div className="layout">
