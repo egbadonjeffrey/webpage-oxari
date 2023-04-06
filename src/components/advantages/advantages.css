@@ -2,9 +2,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 2rem;
     font-weight: 500;
     width: 70%;
     margin: 10rem auto;
+}
+@media screen and (max-width: 800px) {
+    .key-advantages {
+        width: 90%;
+        flex-direction: column;
+        gap: 0;
+    }
 }
 .key-points-container {
     flex: 1;
@@ -12,6 +20,12 @@
     flex-direction: column;
     width: 50%;
     gap: 2rem;
+}
+@media screen and (max-width: 800px) {
+    .key-points-container {
+        width: 100%;
+        gap: 1rem;
+    }
 }
 .key-points-container > h1 {
     font-size: 4rem;
@@ -51,4 +65,18 @@
 .image-section-container img {
     border-radius: 50%;
     width: 100%;
+}
+@media screen and (max-width: 1500px) {
+    .image-section-container img {
+        margin-top: 15rem;
+        height: 20rem;
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .image-section-container img {
+        margin-top: 5rem;
+        height: 20rem;
+        width: 20rem;
+    }
 }

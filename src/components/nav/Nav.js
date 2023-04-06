@@ -10,7 +10,7 @@ const Nav = () => {
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
 
   const handleBackground = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 300) {
       setTransparent(false);
       console.log(window.scrollY);
     } else {

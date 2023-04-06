@@ -9,7 +9,7 @@ const Layout = () => {
 
   useEffect(() => {
     const handleNoMobile = () => {
-      if (window.innerWidth < 1500) {
+      if (window.innerWidth < 500) {
         console.log(window.innerWidth);
         setDesktop(false);
       }

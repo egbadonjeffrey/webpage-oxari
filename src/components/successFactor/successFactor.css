@@ -5,6 +5,11 @@
     width: 70%;
     margin: 0 auto;
 }
+/* @media screen and (max-width: 1024px) {
+    .success-factor-container {
+        width: 90%;
+    }
+} */
 .success-factor-container > h1 {
     font-size: 4rem;
     font-weight: 500;
@@ -21,11 +26,27 @@
     gap: 3rem;
     color: black
 }
+@media screen and (max-width: 800px) {
+    .factors-container {
+        flex-direction: column;
+    }
+    .factors-container div {
+        width: 90%;
+    }
+}
+/* .impact, .green-growth, .risk-assessment {
+    width: 100%;
+} */
 .factors-container .impact h1, .factors-container .green-growth h1, .factors-container .risk-assessment h1 {
     font-size: 2rem;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 2rem;
+}
+@media screen and (max-width: 1024px) {
+    .factors-container .impact h1, .factors-container .green-growth h1, .factors-container .risk-assessment h1 {
+        font-size: 1.5rem;
+    }
 }
 .factors-container .impact div, .factors-container .green-growth div, .factors-container .risk-assessment div {
     font-size: 14px;

@@ -6,6 +6,12 @@
     margin: 0 auto;
     padding: 5rem;
 }
+@media screen and (max-width: 800px) {
+    .methods-container {
+        width: 90%;
+        padding: 5rem 0;
+    }
+}
 .methods-container .intro-statement h1.methods-tag {
     display: flex;
     flex-direction: column;
@@ -29,17 +35,28 @@
     color: rgb(75, 75, 75);
     font-family: 'Exo', sans-serif;
 }
-.method-item-container {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 1024px) {
+    .methods-container .intro-statement p {
+        width: 70%;
+    }
 }
 .method-item-image-container {
     flex: 1;
     object-fit: cover;
 }
-.method-item-container > img {
-    width: 10rem;
-    height: 10rem;
+.method-item-image-container > img {
+    width: 40rem;
+    height: 20rem;
+}
+.benchmark .method-item-image-container > img {
+    width: 40rem;
+    height: 40rem;
+}
+@media screen and (max-width: 1024px) {
+    .benchmark .method-item-image-container > img {
+        width: 40rem;
+        height: 40rem;
+    }
 }
 .method-item-container .method-item-description {
     flex: .9;
@@ -59,11 +76,35 @@
     flex-direction: row;
     margin: 10rem 0;
 }
+@media screen and (max-width: 1024px) {
+    .scope, .shap_analysis {
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+    }
+}
 .scope .method-item-description, .benchmark .method-item-description {
     margin-top: -10rem;
 }
+@media screen and (max-width: 1024px) {
+    .scope .method-item-description, .benchmark .method-item-description {
+        margin-top: 0;
+        margin-bottom: 10rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .scope .method-item-description, .benchmark .method-item-description {
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+}
 .shap_analysis .method-item-description {
     margin-top: -13rem;
+}
+@media screen and (max-width: 1024px) {
+    .shap_analysis .method-item-description {
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
 }
 .shap_analysis .method-item-description p > a {
     text-decoration: none;
@@ -97,4 +138,11 @@
     display: flex;
     flex-direction: row-reverse;
     gap: 2rem;
+}
+@media screen and (max-width: 1024px) {
+    .benchmark {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
 }

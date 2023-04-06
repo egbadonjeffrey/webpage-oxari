@@ -1,5 +1,4 @@
 import "./blob.css";
-import BlobAnime from "../../images/blobanimation.svg";
 
 const Blob = () => {
   return (
@@ -11,11 +10,9 @@ const Blob = () => {
       <div className="blob "> </div>
       <div className="blob purple"></div>
       <span className="scroll-btn">
-        <a href="#">
-          <span className="mouse">
-            <span></span>
-          </span>
-        </a>
+        <span className="mouse">
+          <span></span>
+        </span>
       </span>
     </div>
   );

@@ -48,8 +48,9 @@ const Methods = () => {
           </p>
         </div>
       </div>
-      {methods.map(({ id, title, link, description, span, image }) => (
+      {methods.map(({ id, title, description, image }) => (
         <div
+          key={id}
           className={`method-item-container ${
             title === benchmark ? "benchmark" : "scope"
           } `}

@@ -6,7 +6,13 @@
     width: 70%;
     margin: 10rem auto;
 }
+@media screen and (max-width: 1024px) {
+    .dashboard-container {
+        width: 90%;
+    }
+}
 .dashboard-statement {
+    width: 90%;
     margin-bottom: 10rem;
 }
 .dashboard-statement h1 {
@@ -15,6 +21,16 @@
     font-weight: 600;
     color: #000;
     letter-spacing: -.3rem;
+}
+@media screen and (max-width: 1024px) {
+    .dashboard-statement h1 {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .dashboard-statement h1 {
+        width: 90%;
+    }
 }
 .dashboard-statement span {
     font-size: 4rem;
@@ -26,6 +42,11 @@
     color: gray;
     margin-left: 5rem;
 }
+@media screen and (max-width: 1024px) {
+    .dashboard-statement p {
+        width: 70%;
+    }
+}
 .search-bar {
     position: relative;
     display: flex;
@@ -33,6 +54,11 @@
     width: 50rem;
     height: 3rem;
     margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+    .search-bar  {
+        width: 100%;
+    }
 }
 .search-bar::after {
     background: #13ea4b;
@@ -55,6 +81,9 @@
     padding: 0 1.5rem;
 }
 .search-bar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20%;
     background: #13ea4b;
     border: none;
@@ -74,6 +103,11 @@
     border-top: 1px solid rgba(0,0,0,.1);
     padding-top: 3rem;
     font-family: 'Exo', sans-serif;
+}
+@media screen and (max-width: 800px) {
+    .products-display {
+        flex-direction: column;
+    }
 }
 .filter-selection {
     flex: .5;
@@ -107,6 +141,11 @@
     font-size: .8rem;
     text-align: center;
     color: #28a745;
+}
+@media screen and (max-width: 800px) {
+    .filter-parameter button {
+        width: 40%;
+    }
 }
 .sectors-choice, .countries-choice {
     display: flex;

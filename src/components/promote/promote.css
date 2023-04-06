@@ -8,11 +8,17 @@
     margin: 5rem auto;
     padding: 5rem;
 }
+@media screen and (max-width: 800px) {
+    .promote-container {
+        width: 90%;
+        padding: 0;
+    }
+}
 .promote-container h1.promote-tags {
     display: flex;
     flex-direction: column;
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -.3rem;
 }
 .promote-container h1.promote-tags span {
@@ -24,6 +30,11 @@
     font-weight: 400;
     color: rgb(75, 75, 75);
     font-family: 'Exo', sans-serif;
+}
+@media screen and (max-width: 1024px) {
+    .promote-container p {
+        font-size: 1.2rem;
+    }
 }
 .promote-container p > a {
     font-size: inherit;
