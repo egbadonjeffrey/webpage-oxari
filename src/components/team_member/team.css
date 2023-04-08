@@ -14,6 +14,11 @@
         flex-direction: column;
     } */
 }
+@media screen and (max-width: 500px) {
+    .team-member {
+        flex-direction: column;
+    }
+}
 .team-image-social {
     display: flex;
     flex-direction: column;
@@ -39,6 +44,11 @@
   overflow: hidden;
   animation: morph 3s linear infinite;
   margin-top: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+    .portrait-container {
+        margin: auto;
+    }
 }
 @keyframes morph{
     0%, 100% {

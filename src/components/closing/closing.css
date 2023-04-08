@@ -17,6 +17,16 @@
 @media screen and (max-width: 1024px) {
     .closing-statement {
         right: 150px;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .closing-statement {
+        display: flex;
+        justify-content: center;
+        margin-top: -10px;
+        width: 90%;
+        right: 20px;
     }
 }
 .closing-statement-inner {
@@ -42,6 +52,11 @@
         height: 20rem;
     } */
 }
+@media screen and (max-width: 500px) {
+    .closing-statement-inner {
+        width: 100%;
+    }
+}
 .closing-statement-inner h2 {
     font-size: 2.5rem;
     letter-spacing: -.2rem;
@@ -65,19 +80,28 @@
     margin-top: 2rem;
     line-height: 1.3;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 801px) {
     .closing-statement-inner p {
        font-size: .8rem;
        margin-left: 7rem;
     }
 }
-@media screen and (max-width: 800px) {
-.closing-statement-inner p {
-    font-size: 0.8rem;
-    margin: 1rem 3rem;
-}
+@media screen and (min-width: 501px) {
+    .closing-statement-inner p {
+        font-size: 0.8rem;
+        margin-top: 1rem ;
+        margin-left: 3rem;
+    }
 }
 
+
+@media screen and (max-width: 500px) {
+    .closing-statement-inner p {
+        width: 90%;
+        font-size: .9rem;
+        margin-left: 2rem;
+    }
+}
 .closing-statement-inner p > a {
     color: green;
     text-decoration: none;

@@ -21,6 +21,11 @@
     font-weight: 600;
     letter-spacing: -.3rem;
 }
+@media screen and (max-width: 800px) {
+    .promote-container h1.promote-tags {
+        font-size: 2.7rem;
+    }
+}
 .promote-container h1.promote-tags span {
     font-weight: 400;
 }
@@ -34,6 +39,24 @@
 @media screen and (max-width: 1024px) {
     .promote-container p {
         font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .promote-container p {
+        font-size: .8rem;
+        margin-left: 1rem;
+    }
+}
+@media screen and (min-width: 501px) {
+    .promote-container p {
+        font-size: 1.2rem;
+    margin-left: 1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .promote-container p {
+        font-size: 1rem;
+        margin-left: 1rem;
     }
 }
 .promote-container p > a {

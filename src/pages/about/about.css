@@ -2,6 +2,11 @@
     width: 70%;
     margin: 10rem auto;
 }
+@media screen and (max-width: 500px) {
+    .about-screen-container {
+        width: 90%;
+    }
+}
 .about-screen-container div .statement {
     display: flex;
     flex-direction: row;
@@ -34,12 +39,22 @@
     font-family: 'Roboto', sans-serif;
     letter-spacing: -.3rem;
 }
+@media screen and (max-width: 500px) {
+    .statement .statement-description h1 {
+        font-size: 4rem;
+    }
+}
 .statement .statement-description p {
     font-size: 1rem;
     font-family: 'Exo', sans-serif;
     line-height: 1.4;
     color: rgba(128, 128, 128, 0.886);
     margin-left: 10rem;
+}
+@media screen and (max-width: 500px) {
+    .statement .statement-description p {
+        margin-left: 4rem;
+    }
 }
 .about-team {
     display: grid;

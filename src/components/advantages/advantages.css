@@ -32,6 +32,11 @@
     font-weight: 600;
     letter-spacing: -.3rem;
 }
+@media screen and (max-width: 800px) {
+    .key-points-container h1 {
+        font-size: 2.7rem;
+    }
+}
 .key-points-container h1 > span {
     font-weight: 400;
 }
@@ -78,5 +83,10 @@
         margin-top: 5rem;
         height: 20rem;
         width: 20rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .image-section-container img {
+        margin-left: -5rem;
     }
 }

@@ -32,30 +32,32 @@ body {
 		width: 150px;
 	}
 }
-.blob.ash {
-    background: rgb(213, 213, 213);
-    height: 200px;
-    width: 200px;
-    top: 10%;
-    left: 70%;
-    z-index: 0;
-    animation: transform 30s ease-in-out infinite both alternate;
-}
-
-@media screen and (max-width: 1024px) {
-	.blob.ash {
-		height: 100px;
-		width: 100px;
-		top: 20%;
+@media screen and (max-width: 500px) {
+	.blob {
+		left: -10px;
+		top: 50%;
 	}
 }
-.blob.purple {
-    background:#5a38fd;
+.ash {
+	position: absolute;
+    top: 20%;
+    left: 80%;
+	height: 200px;
+	width: 200px;
+}
+
+.purple {
 	height: 100px;
 	width: 100px;
 	left: 45%;
 	top: 45%;
-    animation: transform 30s ease-in-out infinite both alternate;
+}
+@media screen and (max-width: 500px) {
+	.purple {
+		height: 50px;
+		width: 50px;
+		animation: transform 20s ease-in-out both alternate;
+	}
 }
 .shape-blob {
 	background:#46b35f;
@@ -74,6 +76,12 @@ body {
 	.shape-blob {
 		height: 200px;
 		width: 200px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.shape-blob {
+		height: 100px;
+		width: 100px;
 	}
 }
 .shape-blob.one{
@@ -104,6 +112,14 @@ body {
 	.shape-blob.two {
 		height: 250px;
 		width: 250px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.shape-blob.two {
+		height: 150px;
+		width: 150px;
+		left: 270px;
+		top: -50px;
 	}
 }
 @keyframes transform_one {
@@ -144,6 +160,14 @@ body {
     0%,
   500% { transform: none; }
    50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.2);}
+}
+@media screen and (max-width: 500px) {
+	@keyframes movement_two
+{
+    0%,
+  500% { transform: none; }
+   50% { transform: translate(30%, 40%) rotate(-200deg) scale(1.2);}
+}
 }
 
 /* Mouse */
@@ -209,6 +233,11 @@ body {
 	  left: 0;
 	  right: 0;
 	  text-align: center;
+  }
+  @media screen and (max-width: 500px) {
+	.scroll-btn {
+		top: 60%;
+	}
   }
   .scroll-btn > * {
 	  display: inline-block;

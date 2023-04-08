@@ -4,6 +4,11 @@
     margin: 10rem auto;
     font-family: 'Exo', sans-serif;
 }
+@media screen and (max-width: 500px) {
+    .blog-screen-container {
+        width: 90%;
+    }
+}
 .blog-screen-container h1 {
     font-size: 4rem;
     text-align: center;
@@ -11,6 +16,11 @@
 @media screen and (max-width: 800px) {
     .blog-screen-container h1 {
         font-size: 3rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .blog-screen-container h1 {
+        font-size: 2.5rem;
     }
 }
 .blogs-container {
@@ -51,6 +61,11 @@
         font-size: 2.3rem;
     }
 }
+@media screen and (max-width: 500px) {
+    .blog-description h1 {
+        font-size: 1.6rem;
+    }
+}
 .blog-description > p, .blog-description > span   {
     font-weight: 500;
     font-size: .9rem;
@@ -59,6 +74,11 @@
 @media screen and (max-width: 1024px) {
     .blog-description > p, .blog-description > span   {
         margin-left: 5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .blog-description > p, .blog-description > span  {
+        margin: 1rem 0;
     }
 }
 .blog-description p span  {
@@ -79,4 +99,5 @@
 }
 .blog-image img {
     border-radius: 10px;
+    width: 100%;
 }

@@ -8,6 +8,20 @@ const Nav = () => {
   const [transparent, setTransparent] = useState(true);
   const [show, setShow] = useState(true);
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
+  const [desktop, setDesktop] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth !== undefined) {
+      const handleNoMobile = () => {
+        if (window.innerWidth < 500) {
+          console.log(desktop);
+          setDesktop(false);
+        }
+      };
+
+      handleNoMobile();
+    }
+  }, [desktop]);
 
   const handleBackground = () => {
     if (window.scrollY > 300) {
@@ -50,9 +64,9 @@ const Nav = () => {
 
   return (
     <nav
-      className={`nav ${!show ? "not-visible" : "visible"}   ${
+      className={`nav ${!show ? "not-visible" : "visible"}  ${
         transparent ? "" : "background-color"
-      }`}
+      } ${!desktop ? "displayNone" : ""}`}
     >
       <div className="nav-container">
         <div className="logo-container">

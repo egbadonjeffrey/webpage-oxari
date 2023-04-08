@@ -32,7 +32,7 @@ const About = () => {
       </div>
       <div className="about-team">
         {Team.map((team) => (
-          <TeamMember team={team} />
+          <TeamMember key={team.id} team={team} />
         ))}
       </div>
     </div>

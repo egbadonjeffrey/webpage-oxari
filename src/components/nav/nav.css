@@ -1,6 +1,9 @@
 .background-color {
     background: white;
 }
+.displayNone {
+    display:none;
+}
 .not-visible {
     top: -100px;
 }
